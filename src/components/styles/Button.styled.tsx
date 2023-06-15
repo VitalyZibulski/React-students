@@ -1,6 +1,12 @@
 import styled from "styled-components";
-import myImage from "../../assets/image.png";
 
-export const Image = styled.div`
-    background-image: url(${myImage}});
+export const Button = styled.button`
+    background: #4E71FE;
+    border-radius: 5px;
+`;
+
+
+export const SimpleButton = styled(Button)`
+    background: #fff;
+    border: 2px solid #4E71FE;
 `;
