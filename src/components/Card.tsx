@@ -1,27 +1,33 @@
 import React from 'react';
-
-import { Title, Image, Text, Button, SimpleButton, CardWrapper, ImageWrapper } from './styles';
-
-import styled from "styled-components";
-
-export const BtnDiv = styled.div`  
-   display: flex;
-`
+import CardImage from "../assets/image.png";
+import {
+    Title,
+    Text,
+    Button,
+    SimpleButton,
+    CardWrapper,
+    ImageWrapper,
+    ContentWrapper,
+    Flex
+} from './styles';
 
 const Card = () => {
   return (
     <CardWrapper>
       <ImageWrapper>
-       <Image />
+       <img src={CardImage}/>
       </ImageWrapper>
-      <Title>Headline</Title>
-      <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
-     <BtnDiv>
-      <Button>See more</Button>
-      <SimpleButton>Save</SimpleButton>
-     </BtnDiv>
+      <ContentWrapper>
+         <Title>Headline</Title>
+         <Text>Faucibus. Faucibus. Sit sit sapien sit tempusrisu ut. Sit molestie ornare in venen.</Text>
+         <Flex>
+             <Button>See more</Button>
+             <SimpleButton>Save</SimpleButton>
+         </Flex>
+      </ContentWrapper>
     </CardWrapper>
   );
 };
 
 export default Card;
+
