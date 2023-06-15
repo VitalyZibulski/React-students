@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import myImage from "../../assets/image.png";
+import CardImage from "../../assets/image.png";
 
 export const Image = styled.div`
-    background-image: url(${myImage});
-    width: 280px;
-    height: 170px;
+    background-image: url(${CardImage});
+    width: 100%;
+    height: 100%;
 `;
